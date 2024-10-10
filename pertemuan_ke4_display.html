@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>normal Flow</title>
+        <style>
+            .kontener{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+
+
+            .content{
+                background-color: greenyellow;
+                display: inline-block;
+                width: 200px;
+                height: auto;
+                padding: 10px;
+                margin: 10px;
+            }
+            .konten{
+                background-color:gold;
+                display: inline-block;
+                width: 200px;
+                height: auto;
+                padding: 10px;
+                margin: 10px;
+            }
+
+
+        </style>
+    </head>
+    <body>
+        <div class="kontener">
+        <div class="content"style="order: 2">
+            <h1>ini konten 1</h1>
+            <P>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Saepe est cumque magni eaque ipsum rem distinctio, commodi eveniet tenetur rerum corrupti voluptatem autem totam amet delectus. Tempore ad quod rem.</P>
+        </div>
+
+        <div class="konten" style="order: 1">
+            <h1>isi konten</h1>
+           
+        </div>
+
+        <div class="content"style="order: 3">
+            <h1>ini konten 2</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi sunt consequuntur omnis earum, deserunt aspernatur ab, vel ullam magni labore beatae molestias nulla. Enim aliquid perferendis alias consequatur a impedit?</p>
+        </div>
+
+        <div class="content" style="order: 4">
+            <h1>ini konten 3</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Animi sunt consequuntur omnis earum, deserunt aspernatur ab, vel ullam magni labore beatae molestias nulla. Enim aliquid perferendis alias consequatur a impedit?</p>
+        </div>
+        </div>
+    </body>
+</html>
