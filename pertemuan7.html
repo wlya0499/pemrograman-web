@@ -1,0 +1,98 @@
+<html>
+    <title>pertemuan ke 7
+    </title>
+
+    <body>
+        <script>
+
+            //if else
+            const skor = 90;
+            let grade;
+
+            if ( skor >=90){
+                grade = 'A';
+            } else if ( skor >=80){
+                grade = 'B';
+            }else if ( skor >=70){
+                grade = 'c';
+            }else if ( skor >=60){
+                grade = 'd';
+            }else {
+                grade = 'e';
+            }
+            document.writeln("nilai kamu adalah: "+ grade)
+        
+
+
+        </script>
+        <br> </br>
+        <script>
+            const hari = 3;
+            let namaHari;
+            switch(hari){
+                case 1:
+                    namaHari = "senin";
+                    break;
+                case 2:
+                    namaHari = "selasa";
+                    break;
+                case 3:
+                    namaHari = "rabu";
+                    break;
+                case 4:
+                    namaHari = "kamis";
+                    break;
+                case 5:
+                    namaHari = "jumat";
+                    break;
+                case 6:
+                    namaHari = "sabtu";
+                    break;
+                case 7:
+                    namaHari = "minggu";
+                    break;
+
+            }
+
+            document.writeln("hari ini adalah hari: "+namaHari);
+
+            //for-loop
+        </script>
+
+    <br></br>
+    <H3> FOR-LOOP</H3>
+        <script>
+    
+            for(var j = 0; j < 5; j++){
+                document.writeln("nomor: "+ j+"</br>");
+            }
+
+        </script>
+        
+
+    <H3> WHILE-LOOP</H3>
+    <script>
+       
+        let i =0;
+        while(i < 5){
+            document.writeln("number: "+ i+"</br>");
+            i++;
+        }
+    </script>
+    
+
+    <H3> DO-WHILE-LOOP</H3>
+    <script>
+
+        let a = 0;
+        do{
+         document.writeln("moji: "+a+"</br>"); 
+         a++;  
+        } while(a < 5);
+    </script>
+
+<br></br>
+
+
+    </body>
+</html>
