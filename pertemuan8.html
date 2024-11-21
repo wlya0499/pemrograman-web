@@ -1,0 +1,66 @@
+<html>
+    <head>
+
+        <title>
+            function
+        </title>
+    </head>
+    <body>
+        <script>
+            //Function
+            function sayHallp(){
+                document.write("hallo world"+"<br>");
+            }
+            sayHallp();
+
+            //Function with Parameters
+            function sayHallo(namaDepan,namaBelakang){
+                document.write(`halo` +namaDepan+` ` +namaBelakang+ `</br>`);
+            }
+            sayHallo(' willy','aditia') ; 
+            sayHallo(' willy','rosyadi') ; 
+
+            //Anonymous Function
+            let hello= function (nama){
+                document.write(`halo` +nama);
+            }
+            hello(' willy') ;
+
+
+
+            //Function in Function
+            function fungsiluar(fungsiluar){
+                function fungsidalam(fungsidalam){
+                    document.write("variable luar: "+ fungsiluar+ "<br>");
+                    document.write(" variable dalam: "+ fungsidalam+"<br>");
+                }
+                fungsidalam("dalam");
+                
+            }
+            fungsiluar ("luar");
+
+            //Arrow Function
+            const greet = (nama) => {
+                document.write(" hallo, "+ nama+ "<br>l");
+            };
+
+            greet("willy");
+
+            //Closure
+            function fungsiluar(fungsiluar){
+                function fungsidalam(fungsidalam){
+                    document.write("variable luar: "+ fungsiluar+ "<br>");
+                    document.write(" variable dalam: "+ fungsidalam+"<br>");
+                };
+                
+            }
+            const newfunction =fungsiluar("luar");
+            newfunction ("dalam");
+            newfunction ("luar");
+
+        </script>
+
+        
+
+            </body>
+        </html>
