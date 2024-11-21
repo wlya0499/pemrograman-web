@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <title>
+            pertemuan ke 9 (js dom)
+        </title>
+    </head>
+
+
+    <body>
+
+        <h1 id="header">Konichiwa minnna-san</h1>    
+        <h2 flag="judul">ini sub judul</h2>
+        <h2 flag="judul">ini sub judul ke 2</h2>
+        <button onclick="changetext()">change Text</button>
+        <button onclick="add()">add</button>
+
+        <script>
+        function changetext(){
+            document.getElementById("header").innerHTML="Mari belajar skrip jawa!";
+
+            let element =document.createElement('H2');
+        element.innerHTML="1.DOM Concept-Element"
+        document.body.appendChild(element)
+
+        var nodleist= document.getElementsByTagName("h2");
+        nodleist[0].innerHTML='pertemuan 9';
+
+        }
+
+        function add(){
+         var elemen=document.getElementById("header");
+        var atribut=element.getAttribute("id");
+        console.log(atribut);
+
+        
+
+        
+        };
+
+        
+        var button =document.querySelector('button');
+        button.addEventListener("click",function(){
+            alert("tombol telah di klik");
+        });
+
+
+       
+        
+
+
+
+        </script>
+        
+    </body>
+</html>
